@@ -25,7 +25,7 @@ class Admin extends CI_Controller
         $data['title'] = 'Dashboard';
         $data['user'] = $this->db->get_where('petugas', ['username' => $this->session->userdata('username')])->row_array();
         $data['petugas'] = $this->petugas->getPetugas();
-        $data['masyarakat'] = $this->masyarakat->getMasyarakat();
+        // $data['masyarakat'] = $this->masyarakat->getMasyarakat();
         $data['pengaduan'] = $this->pengaduan->getPengaduan();
         // $data['petugas'] = $this->db->get_where('petugas', ['level' => 'petugas'])->row_array();
 

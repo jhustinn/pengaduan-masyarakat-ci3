@@ -23,7 +23,7 @@ class Petugas extends CI_Controller
         $this->load->model('Pengaduan_model', 'pengaduan');
         $data['user'] = $this->db->get_where('petugas', ['username' => $this->session->userdata('username')])->row_array();
         $data['petugas'] = $this->petugas->getPetugas();
-        $data['masyarakat'] = $this->masyarakat->getMasyarakat();
+        // $data['masyarakat'] = $this->masyarakat->getMasyarakat();
         $data['pengaduan'] = $this->pengaduan->getPengaduan();
         $data['jmlpengaduan'] = $this->pengaduan->getJmlPengaduan();
         $data['selesai'] = $this->pengaduan->getAduanSelesai();

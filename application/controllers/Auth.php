@@ -134,7 +134,7 @@ class Auth extends CI_Controller
             //     redirect('auth');
             // }
         } else {
-            $this->session->set_login('login', 1);
+            // $this->session->set_login('login', 1);
             $this->session->set_flashdata('message', '<div class="alert  alert-danger" role="alert">
             Username is not registered!
             </div>');
